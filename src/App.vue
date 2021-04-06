@@ -1,14 +1,9 @@
 <template>
   <div id="app">
-    <h1>App</h1>
-    <addtodo
-      @add-todo="addtodo"
-    />
+    <h1>Todo application</h1>
     <hr>
-    <todolist
-      v-bind:todos="todos"
-      @remove-todo="removetodo"
-    />
+
+    <router-view />
   </div>
 </template>
 
